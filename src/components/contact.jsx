@@ -1,6 +1,21 @@
 import { useState } from "react";
+import { Modal, Box, Button } from "@mui/material";
 import emailjs from "emailjs-com";
 import React from "react";
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  backgroundColor: 'white',
+  boxShadow: 24,
+  p: 4,
+  outline: 0,
+  borderRadius: '2rem',
+  padding: '3rem',
+};
 
 const initialState = {
   name: "",
@@ -8,6 +23,7 @@ const initialState = {
   message: "",
 };
 export const Contact = (props) => {
+  const [open, setOpen] = useState(false);
   const [{ name, email, message }, setState] = useState(initialState);
 
   const handleChange = (e) => {
@@ -18,21 +34,33 @@ export const Contact = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
+    setOpen(true);
     emailjs
       .sendForm("service_sbslqy2", "template_dvo8ugj", e.target, "C0SjSV_J0VeoPp6hM")
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
           clearState();
         },
         (error) => {
-          console.log(error.text);
+          clearState();
         }
       );
   };
   return (
     <div>
+      <Modal open={open}>
+        <Box style={style}>
+          <h4 style={{fontWeight: 700, color: "#58ad6f"}}>
+            Your message was successfully sent!
+          </h4>
+          <p style={{textAlign: 'center', marginTop: '2rem'}}>
+            You'll hear back from us shortly. 
+          </p>
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem'}}>
+          <button onClick={() => setOpen(false)} style={{ borderRadius: '1rem', border: 'none', color: '#58ad6f', width: '6rem'}}>Close</button>
+          </div>
+      </Box>
+      </Modal>
       <div id="contact">
         <div className="container">
           <div className="col-md-8">

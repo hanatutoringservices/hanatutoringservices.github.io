@@ -20,13 +20,13 @@
       "img": "img/team/jasper.jpg",
       "name": "Jasper Park",
       "job": "Head of Computer Science @ YRDSB",
-      "degrees": ["BComp, Queen's University", "BEd, Queen's University"]
+      "degrees": ["BComp, Queen's University", "BEd, Queen's University", "OCT"]
     },
     {
       "img": "img/team/noons.jpg",
       "name": "Rebekah Park",
       "job": "Math Teacher @ YRDSB",
-      "degrees": ["BSc in Life Sciences, McMaster University", "BEd, Niagara University", "MEd, Brock University "]
+      "degrees": ["BSc in Life Sciences, McMaster University", "BEd, Niagara University", "MEd, Brock University", "OCT"]
     },
     {
       "img": "img/team/savannah.jpg",
