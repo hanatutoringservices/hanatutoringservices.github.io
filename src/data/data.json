@@ -1,0 +1,49 @@
+{
+  "About": {
+    "Why": [
+      "Mathematics",
+      "Physics",
+      "Biology",
+      "Chemistry",
+      "Computer Science"
+    ],
+    "Why2": [
+      "English",
+      "French",
+      "Humanities (Law, Psychology)",
+      "Geography & History",
+      "Academic Guidance"
+    ]
+  },
+  "Team": [
+    {
+      "img": "img/team/jasper.jpg",
+      "name": "Jasper Park",
+      "job": "Head of Computer Science @ YRDSB",
+      "degrees": ["BComp, Queen's University", "BEd, Queen's University"]
+    },
+    {
+      "img": "img/team/noons.jpg",
+      "name": "Rebekah Park",
+      "job": "Math Teacher @ YRDSB",
+      "degrees": ["BSc in Life Sciences, McMaster University", "BEd, Niagara University", "MEd, Brock University "]
+    },
+    {
+      "img": "img/team/savannah.jpg",
+      "name": "Savannah Tremblay",
+      "job": "PhD Student @ University of Toronto and Baycrest Hospital",
+      "degrees": ["BA in Psychology, Wilfrid Laurier University"]
+
+    },
+    {
+      "img": "img/team/matt.jpg",
+      "name": "Matthew Hyeun",
+      "job": "Software Engineer @ HomeX",
+      "degrees": ["BASc in Mechatronics and Software Engineering, University of Waterloo"]
+
+    }
+  ],
+  "Contact": {
+    "email": "hanatutoringservices@gmail.com"
+  }
+}
